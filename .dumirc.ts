@@ -8,14 +8,14 @@ export default defineConfig({
   themeConfig: {
     name: '组件库',
     logo: iconPath,
+    footer: 'Copyright © 2023 | Powered by juyren',
   },
   resolve: {
-    // docDirs: ['docs', 'packages/*'],
-    // atomDirs: [
-    //   {
-    //     type: 'components',
-    //     dir: 'packages/*',
-    //   },
-    // ],
+    atomDirs: [
+      {
+        type: 'component',
+        dir: 'packages',
+      },
+    ],
   },
 });
